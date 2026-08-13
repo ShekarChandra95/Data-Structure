@@ -6,11 +6,11 @@ class Solution(object):
         """
         if not nums:
             return 0
-        j = 0
+        k = 1
 
         for i in range(1, len(nums)):
-            if nums[j] != nums[i]:
-                j += 1
-                nums[j] = nums[i]
-
-        return j+1     
+            if nums[i] != nums[k-1]:
+                nums[k] = nums[i]
+                k += 1
+                
+        return k
