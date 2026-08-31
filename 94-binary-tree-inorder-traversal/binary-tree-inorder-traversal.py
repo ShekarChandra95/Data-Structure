@@ -7,6 +7,9 @@
 class Solution:
     def inorderTraversal(self, root: Optional[TreeNode]) -> List[int]:
         res =[]
+        # For Inorder, we do something between left and right.
+        # For Preorder, we do something before left and right.
+        # For Postorder, we do something after left and right.
 
         def inorder(root):
             if not root:
