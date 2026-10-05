@@ -15,3 +15,6 @@ class Solution:
             return n1.val == n2.val and ismirror(n1.left, n2.right) and ismirror(n1.right, n2.left)
         
         return ismirror(root.left, root.right)
+
+# if input = [1,2,2,3,4,4,3]
+# output retrun - True
